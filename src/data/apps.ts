@@ -62,7 +62,7 @@ export const apps: CivicApp[] = [
     title: 'みらい議会＠唐津市',
     description:
       '唐津市議会でいまどんな議案が審議されているかを、やさしい言葉で解説。「説明をもっと詳しく」で、条文や金額などの正確な情報にも切り替えられます。',
-    status: 'wip',
+    status: 'live',
     repo: 'mirai-gikai-karatsu',
     icon: '🏛️',
   },
