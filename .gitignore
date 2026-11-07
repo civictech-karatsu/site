@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# センシティブな規約・名簿は別の非公開リポジトリで管理（誤コミット防止）
+docs/registration/

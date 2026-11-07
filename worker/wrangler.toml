@@ -1,5 +1,5 @@
 # ハブ civictech-karatsu.org のパス振り分け Worker。
-# /gikai* を gikai アプリ（別 Pages プロジェクト）へ転送する。
+# /gikai* などを各アプリ（別 Pages / Vercel プロジェクト）へ転送する。
 # 新しいアプリを増やすときは src/index.js の ROUTES と routes を追記する。
 name = "civictech-karatsu-router"
 main = "src/index.js"
@@ -12,4 +12,6 @@ routes = [
   { pattern = "civictech-karatsu.org/keizai/*", zone_name = "civictech-karatsu.org" },
   { pattern = "civictech-karatsu.org/people-flow", zone_name = "civictech-karatsu.org" },
   { pattern = "civictech-karatsu.org/people-flow/*", zone_name = "civictech-karatsu.org" },
+  { pattern = "civictech-karatsu.org/mirai-gikai", zone_name = "civictech-karatsu.org" },
+  { pattern = "civictech-karatsu.org/mirai-gikai/*", zone_name = "civictech-karatsu.org" },
 ]

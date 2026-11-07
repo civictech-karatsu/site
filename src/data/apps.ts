@@ -3,7 +3,7 @@
 // 新しいアプリを追加するときは、この配列に 1 件足すだけ。
 //   1. ここに { path, title, ... } を追記
 //   2. アプリ本体は別リポジトリ（civictech-karatsu/<repo>）で開発
-//   3. vercel.json の rewrites に /<path> の転送先を 1 行足す
+//   3. worker/ のルーター（src/index.js の ROUTES と wrangler.toml の routes）に /<path> の転送先を足す
 // これでトップの「アプリ一覧」に自動で並びます。
 
 export type AppStatus = 'live' | 'wip' | 'planned';
@@ -56,5 +56,14 @@ export const apps: CivicApp[] = [
     status: 'live',
     repo: 'karatsu-people-flow',
     icon: '🗺️',
+  },
+  {
+    path: 'mirai-gikai',
+    title: 'みらい議会＠唐津市',
+    description:
+      '唐津市議会でいまどんな議案が審議されているかを、やさしい言葉で解説。「説明をもっと詳しく」で、条文や金額などの正確な情報にも切り替えられます。',
+    status: 'wip',
+    repo: 'mirai-gikai-karatsu',
+    icon: '🏛️',
   },
 ];
